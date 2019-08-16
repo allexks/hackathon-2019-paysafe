@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1ADD47902306B3FA00329973 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADD478F2306B3FA00329973 /* AppDelegate.swift */; };
+		1ADD47922306B3FA00329973 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADD47912306B3FA00329973 /* ViewController.swift */; };
+		1ADD47952306B3FA00329973 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ADD47932306B3FA00329973 /* Main.storyboard */; };
+		1ADD47982306B3FA00329973 /* SkittleLittle.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1ADD47962306B3FA00329973 /* SkittleLittle.xcdatamodeld */; };
+		1ADD479A2306B3FB00329973 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ADD47992306B3FB00329973 /* Assets.xcassets */; };
+		1ADD479D2306B3FB00329973 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ADD479B2306B3FB00329973 /* LaunchScreen.storyboard */; };
+		1ADD47A82306B3FB00329973 /* SkittleLittleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADD47A72306B3FB00329973 /* SkittleLittleTests.swift */; };
+		1ADD47B32306B3FB00329973 /* SkittleLittleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADD47B22306B3FB00329973 /* SkittleLittleUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1ADD47A42306B3FB00329973 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1ADD47842306B3FA00329973 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1ADD478B2306B3FA00329973;
+			remoteInfo = SkittleLittle;
+		};
+		1ADD47AF2306B3FB00329973 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1ADD47842306B3FA00329973 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1ADD478B2306B3FA00329973;
+			remoteInfo = SkittleLittle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1ADD478C2306B3FA00329973 /* SkittleLittle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkittleLittle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1ADD478F2306B3FA00329973 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1ADD47912306B3FA00329973 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1ADD47942306B3FA00329973 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1ADD47972306B3FA00329973 /* SkittleLittle.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SkittleLittle.xcdatamodel; sourceTree = "<group>"; };
+		1ADD47992306B3FB00329973 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1ADD479C2306B3FB00329973 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1ADD479E2306B3FB00329973 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1ADD47A32306B3FB00329973 /* SkittleLittleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkittleLittleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1ADD47A72306B3FB00329973 /* SkittleLittleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkittleLittleTests.swift; sourceTree = "<group>"; };
+		1ADD47A92306B3FB00329973 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1ADD47AE2306B3FB00329973 /* SkittleLittleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkittleLittleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1ADD47B22306B3FB00329973 /* SkittleLittleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkittleLittleUITests.swift; sourceTree = "<group>"; };
+		1ADD47B42306B3FB00329973 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1ADD47892306B3FA00329973 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ADD47A02306B3FB00329973 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ADD47AB2306B3FB00329973 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1ADD47832306B3FA00329973 = {
+			isa = PBXGroup;
+			children = (
+				1ADD478E2306B3FA00329973 /* SkittleLittle */,
+				1ADD47A62306B3FB00329973 /* SkittleLittleTests */,
+				1ADD47B12306B3FB00329973 /* SkittleLittleUITests */,
+				1ADD478D2306B3FA00329973 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1ADD478D2306B3FA00329973 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1ADD478C2306B3FA00329973 /* SkittleLittle.app */,
+				1ADD47A32306B3FB00329973 /* SkittleLittleTests.xctest */,
+				1ADD47AE2306B3FB00329973 /* SkittleLittleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1ADD478E2306B3FA00329973 /* SkittleLittle */ = {
+			isa = PBXGroup;
+			children = (
+				1ADD478F2306B3FA00329973 /* AppDelegate.swift */,
+				1ADD47912306B3FA00329973 /* ViewController.swift */,
+				1ADD47932306B3FA00329973 /* Main.storyboard */,
+				1ADD47992306B3FB00329973 /* Assets.xcassets */,
+				1ADD479B2306B3FB00329973 /* LaunchScreen.storyboard */,
+				1ADD479E2306B3FB00329973 /* Info.plist */,
+				1ADD47962306B3FA00329973 /* SkittleLittle.xcdatamodeld */,
+			);
+			path = SkittleLittle;
+			sourceTree = "<group>";
+		};
+		1ADD47A62306B3FB00329973 /* SkittleLittleTests */ = {
+			isa = PBXGroup;
+			children = (
+				1ADD47A72306B3FB00329973 /* SkittleLittleTests.swift */,
+				1ADD47A92306B3FB00329973 /* Info.plist */,
+			);
+			path = SkittleLittleTests;
+			sourceTree = "<group>";
+		};
+		1ADD47B12306B3FB00329973 /* SkittleLittleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1ADD47B22306B3FB00329973 /* SkittleLittleUITests.swift */,
+				1ADD47B42306B3FB00329973 /* Info.plist */,
+			);
+			path = SkittleLittleUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1ADD478B2306B3FA00329973 /* SkittleLittle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1ADD47B72306B3FB00329973 /* Build configuration list for PBXNativeTarget "SkittleLittle" */;
+			buildPhases = (
+				1ADD47882306B3FA00329973 /* Sources */,
+				1ADD47892306B3FA00329973 /* Frameworks */,
+				1ADD478A2306B3FA00329973 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SkittleLittle;
+			productName = SkittleLittle;
+			productReference = 1ADD478C2306B3FA00329973 /* SkittleLittle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1ADD47A22306B3FB00329973 /* SkittleLittleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1ADD47BA2306B3FB00329973 /* Build configuration list for PBXNativeTarget "SkittleLittleTests" */;
+			buildPhases = (
+				1ADD479F2306B3FB00329973 /* Sources */,
+				1ADD47A02306B3FB00329973 /* Frameworks */,
+				1ADD47A12306B3FB00329973 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1ADD47A52306B3FB00329973 /* PBXTargetDependency */,
+			);
+			name = SkittleLittleTests;
+			productName = SkittleLittleTests;
+			productReference = 1ADD47A32306B3FB00329973 /* SkittleLittleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1ADD47AD2306B3FB00329973 /* SkittleLittleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1ADD47BD2306B3FB00329973 /* Build configuration list for PBXNativeTarget "SkittleLittleUITests" */;
+			buildPhases = (
+				1ADD47AA2306B3FB00329973 /* Sources */,
+				1ADD47AB2306B3FB00329973 /* Frameworks */,
+				1ADD47AC2306B3FB00329973 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1ADD47B02306B3FB00329973 /* PBXTargetDependency */,
+			);
+			name = SkittleLittleUITests;
+			productName = SkittleLittleUITests;
+			productReference = 1ADD47AE2306B3FB00329973 /* SkittleLittleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1ADD47842306B3FA00329973 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = ApplePie;
+				TargetAttributes = {
+					1ADD478B2306B3FA00329973 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					1ADD47A22306B3FB00329973 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 1ADD478B2306B3FA00329973;
+					};
+					1ADD47AD2306B3FB00329973 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 1ADD478B2306B3FA00329973;
+					};
+				};
+			};
+			buildConfigurationList = 1ADD47872306B3FA00329973 /* Build configuration list for PBXProject "SkittleLittle" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1ADD47832306B3FA00329973;
+			productRefGroup = 1ADD478D2306B3FA00329973 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1ADD478B2306B3FA00329973 /* SkittleLittle */,
+				1ADD47A22306B3FB00329973 /* SkittleLittleTests */,
+				1ADD47AD2306B3FB00329973 /* SkittleLittleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1ADD478A2306B3FA00329973 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ADD479D2306B3FB00329973 /* LaunchScreen.storyboard in Resources */,
+				1ADD479A2306B3FB00329973 /* Assets.xcassets in Resources */,
+				1ADD47952306B3FA00329973 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ADD47A12306B3FB00329973 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ADD47AC2306B3FB00329973 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1ADD47882306B3FA00329973 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ADD47922306B3FA00329973 /* ViewController.swift in Sources */,
+				1ADD47902306B3FA00329973 /* AppDelegate.swift in Sources */,
+				1ADD47982306B3FA00329973 /* SkittleLittle.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ADD479F2306B3FB00329973 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ADD47A82306B3FB00329973 /* SkittleLittleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ADD47AA2306B3FB00329973 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ADD47B32306B3FB00329973 /* SkittleLittleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1ADD47A52306B3FB00329973 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1ADD478B2306B3FA00329973 /* SkittleLittle */;
+			targetProxy = 1ADD47A42306B3FB00329973 /* PBXContainerItemProxy */;
+		};
+		1ADD47B02306B3FB00329973 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1ADD478B2306B3FA00329973 /* SkittleLittle */;
+			targetProxy = 1ADD47AF2306B3FB00329973 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1ADD47932306B3FA00329973 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1ADD47942306B3FA00329973 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1ADD479B2306B3FB00329973 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1ADD479C2306B3FB00329973 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1ADD47B52306B3FB00329973 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1ADD47B62306B3FB00329973 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1ADD47B82306B3FB00329973 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SkittleLittle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bg.applepie.SkittleLittle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1ADD47B92306B3FB00329973 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SkittleLittle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bg.applepie.SkittleLittle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1ADD47BB2306B3FB00329973 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SkittleLittleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bg.applepie.SkittleLittleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SkittleLittle.app/SkittleLittle";
+			};
+			name = Debug;
+		};
+		1ADD47BC2306B3FB00329973 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SkittleLittleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bg.applepie.SkittleLittleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SkittleLittle.app/SkittleLittle";
+			};
+			name = Release;
+		};
+		1ADD47BE2306B3FB00329973 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SkittleLittleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bg.applepie.SkittleLittleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SkittleLittle;
+			};
+			name = Debug;
+		};
+		1ADD47BF2306B3FB00329973 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SkittleLittleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bg.applepie.SkittleLittleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SkittleLittle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1ADD47872306B3FA00329973 /* Build configuration list for PBXProject "SkittleLittle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ADD47B52306B3FB00329973 /* Debug */,
+				1ADD47B62306B3FB00329973 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1ADD47B72306B3FB00329973 /* Build configuration list for PBXNativeTarget "SkittleLittle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ADD47B82306B3FB00329973 /* Debug */,
+				1ADD47B92306B3FB00329973 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1ADD47BA2306B3FB00329973 /* Build configuration list for PBXNativeTarget "SkittleLittleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ADD47BB2306B3FB00329973 /* Debug */,
+				1ADD47BC2306B3FB00329973 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1ADD47BD2306B3FB00329973 /* Build configuration list for PBXNativeTarget "SkittleLittleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ADD47BE2306B3FB00329973 /* Debug */,
+				1ADD47BF2306B3FB00329973 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1ADD47962306B3FA00329973 /* SkittleLittle.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1ADD47972306B3FA00329973 /* SkittleLittle.xcdatamodel */,
+			);
+			currentVersion = 1ADD47972306B3FA00329973 /* SkittleLittle.xcdatamodel */;
+			path = SkittleLittle.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1ADD47842306B3FA00329973 /* Project object */;
+}

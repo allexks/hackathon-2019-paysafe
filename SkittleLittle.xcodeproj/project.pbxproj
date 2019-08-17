@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01A580DA2307DD45002315F4 /* PersonalTransactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A580D92307DD45002315F4 /* PersonalTransactions.swift */; };
+		01A580DC2307DD92002315F4 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A580DB2307DD92002315F4 /* Transaction.swift */; };
+		01A580DE2307DDBE002315F4 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A580DD2307DDBE002315F4 /* Enums.swift */; };
+		01A580E02307DEC5002315F4 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A580DF2307DEC5002315F4 /* Person.swift */; };
 		1ADD47902306B3FA00329973 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADD478F2306B3FA00329973 /* AppDelegate.swift */; };
 		1ADD47952306B3FA00329973 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ADD47932306B3FA00329973 /* Main.storyboard */; };
 		1ADD47982306B3FA00329973 /* SkittleLittle.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1ADD47962306B3FA00329973 /* SkittleLittle.xcdatamodeld */; };
@@ -39,6 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01A580D92307DD45002315F4 /* PersonalTransactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PersonalTransactions.swift; path = SkittleLittle/PersonalTransactions.swift; sourceTree = SOURCE_ROOT; };
+		01A580DB2307DD92002315F4 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Transaction.swift; path = SkittleLittle/Transaction.swift; sourceTree = SOURCE_ROOT; };
+		01A580DD2307DDBE002315F4 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Enums.swift; path = SkittleLittle/Enums.swift; sourceTree = SOURCE_ROOT; };
+		01A580DF2307DEC5002315F4 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Person.swift; path = SkittleLittle/Person.swift; sourceTree = SOURCE_ROOT; };
 		1ADD478C2306B3FA00329973 /* SkittleLittle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkittleLittle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ADD478F2306B3FA00329973 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1ADD47942306B3FA00329973 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -181,6 +189,10 @@
 		F3DAA6622307D52200A9D765 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				01A580D92307DD45002315F4 /* PersonalTransactions.swift */,
+				01A580DB2307DD92002315F4 /* Transaction.swift */,
+				01A580DD2307DDBE002315F4 /* Enums.swift */,
+				01A580DF2307DEC5002315F4 /* Person.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -356,7 +368,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01A580E02307DEC5002315F4 /* Person.swift in Sources */,
+				01A580DA2307DD45002315F4 /* PersonalTransactions.swift in Sources */,
 				1ADD47902306B3FA00329973 /* AppDelegate.swift in Sources */,
+				01A580DE2307DDBE002315F4 /* Enums.swift in Sources */,
+				01A580DC2307DD92002315F4 /* Transaction.swift in Sources */,
 				1ADD47982306B3FA00329973 /* SkittleLittle.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

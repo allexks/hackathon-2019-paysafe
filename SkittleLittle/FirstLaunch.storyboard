@@ -202,6 +202,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z82-wI-e4a">
                                                 <rect key="frame" x="189.5" y="0.0" width="80" height="34"/>
                                                 <state key="normal" title="Choose"/>
+                                                <connections>
+                                                    <action selector="onTouchPickButton:" destination="rRM-xI-0h2" eventType="touchUpInside" id="rwK-6n-Mzl"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -218,7 +221,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mmQ-HP-CRu">
-                                <rect key="frame" x="0.0" y="506.5" width="414" height="389.5"/>
+                                <rect key="frame" x="0.0" y="507" width="414" height="389"/>
                             </pickerView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -237,6 +240,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3Uq-ib-S8D"/>
                     </view>
+                    <connections>
+                        <outlet property="balanceField" destination="is7-70-RZl" id="lno-r5-v6Z"/>
+                        <outlet property="currencyField" destination="3CA-FG-nK0" id="bS5-U5-rLe"/>
+                        <outlet property="periodPicker" destination="mmQ-HP-CRu" id="Ep9-cm-Z7L"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WLG-hi-rQa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -30,9 +30,9 @@ enum RecurrenceType {
     case oncePerPeriod
 }
 
-enum Period {
-    case month
-    case week
-    case day
-    case year
+enum Period: String, CaseIterable {
+    case month = "Month"
+    case week = "Week"
+    case day = "Day"
+    case year = "Year"
 }

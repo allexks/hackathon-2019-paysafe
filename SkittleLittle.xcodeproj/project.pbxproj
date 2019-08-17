@@ -8,13 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		1ADD47902306B3FA00329973 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADD478F2306B3FA00329973 /* AppDelegate.swift */; };
-		1ADD47922306B3FA00329973 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADD47912306B3FA00329973 /* ViewController.swift */; };
 		1ADD47952306B3FA00329973 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ADD47932306B3FA00329973 /* Main.storyboard */; };
 		1ADD47982306B3FA00329973 /* SkittleLittle.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1ADD47962306B3FA00329973 /* SkittleLittle.xcdatamodeld */; };
 		1ADD479A2306B3FB00329973 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ADD47992306B3FB00329973 /* Assets.xcassets */; };
 		1ADD479D2306B3FB00329973 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ADD479B2306B3FB00329973 /* LaunchScreen.storyboard */; };
 		1ADD47A82306B3FB00329973 /* SkittleLittleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADD47A72306B3FB00329973 /* SkittleLittleTests.swift */; };
 		1ADD47B32306B3FB00329973 /* SkittleLittleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADD47B22306B3FB00329973 /* SkittleLittleUITests.swift */; };
+		F3DAA6652307D61C00A9D765 /* AddTransaction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3DAA6642307D61C00A9D765 /* AddTransaction.storyboard */; };
+		F3DAA6672307D63900A9D765 /* Activity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3DAA6662307D63900A9D765 /* Activity.storyboard */; };
+		F3DAA6692307D66C00A9D765 /* Achivements.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3DAA6682307D66C00A9D765 /* Achivements.storyboard */; };
+		F3DAA66D2307D6CE00A9D765 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3DAA66C2307D6CE00A9D765 /* Settings.storyboard */; };
+		F3DAA6702307D70F00A9D765 /* Overview.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3DAA66F2307D70F00A9D765 /* Overview.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +41,6 @@
 /* Begin PBXFileReference section */
 		1ADD478C2306B3FA00329973 /* SkittleLittle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkittleLittle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ADD478F2306B3FA00329973 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1ADD47912306B3FA00329973 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1ADD47942306B3FA00329973 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1ADD47972306B3FA00329973 /* SkittleLittle.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SkittleLittle.xcdatamodel; sourceTree = "<group>"; };
 		1ADD47992306B3FB00329973 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +52,11 @@
 		1ADD47AE2306B3FB00329973 /* SkittleLittleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkittleLittleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ADD47B22306B3FB00329973 /* SkittleLittleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkittleLittleUITests.swift; sourceTree = "<group>"; };
 		1ADD47B42306B3FB00329973 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3DAA6642307D61C00A9D765 /* AddTransaction.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddTransaction.storyboard; sourceTree = "<group>"; };
+		F3DAA6662307D63900A9D765 /* Activity.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Activity.storyboard; sourceTree = "<group>"; };
+		F3DAA6682307D66C00A9D765 /* Achivements.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Achivements.storyboard; sourceTree = "<group>"; };
+		F3DAA66C2307D6CE00A9D765 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		F3DAA66F2307D70F00A9D765 /* Overview.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Overview.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				1ADD478E2306B3FA00329973 /* SkittleLittle */,
+				F3DAA65C2307D4B400A9D765 /* Supporting Files */,
 				1ADD47A62306B3FB00329973 /* SkittleLittleTests */,
 				1ADD47B12306B3FB00329973 /* SkittleLittleUITests */,
 				1ADD478D2306B3FA00329973 /* Products */,
@@ -99,13 +108,13 @@
 		1ADD478E2306B3FA00329973 /* SkittleLittle */ = {
 			isa = PBXGroup;
 			children = (
+				F3DAA6632307D52900A9D765 /* Utility */,
+				F3DAA6622307D52200A9D765 /* Shared */,
+				F3DAA65E2307D4D700A9D765 /* First Launch  */,
+				F3DAA66A2307D67800A9D765 /* MainTabBar */,
 				1ADD478F2306B3FA00329973 /* AppDelegate.swift */,
-				1ADD47912306B3FA00329973 /* ViewController.swift */,
 				1ADD47932306B3FA00329973 /* Main.storyboard */,
-				1ADD47992306B3FB00329973 /* Assets.xcassets */,
-				1ADD479B2306B3FB00329973 /* LaunchScreen.storyboard */,
 				1ADD479E2306B3FB00329973 /* Info.plist */,
-				1ADD47962306B3FA00329973 /* SkittleLittle.xcdatamodeld */,
 			);
 			path = SkittleLittle;
 			sourceTree = "<group>";
@@ -126,6 +135,89 @@
 				1ADD47B42306B3FB00329973 /* Info.plist */,
 			);
 			path = SkittleLittleUITests;
+			sourceTree = "<group>";
+		};
+		F3DAA65C2307D4B400A9D765 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1ADD47962306B3FA00329973 /* SkittleLittle.xcdatamodeld */,
+				1ADD47992306B3FB00329973 /* Assets.xcassets */,
+				1ADD479B2306B3FB00329973 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F3DAA65E2307D4D700A9D765 /* First Launch  */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "First Launch ";
+			sourceTree = "<group>";
+		};
+		F3DAA65F2307D4F400A9D765 /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				F3DAA6662307D63900A9D765 /* Activity.storyboard */,
+			);
+			path = Activity;
+			sourceTree = "<group>";
+		};
+		F3DAA6602307D50900A9D765 /* AddTransaction */ = {
+			isa = PBXGroup;
+			children = (
+				F3DAA6642307D61C00A9D765 /* AddTransaction.storyboard */,
+			);
+			path = AddTransaction;
+			sourceTree = "<group>";
+		};
+		F3DAA6612307D51400A9D765 /* Achivemetns */ = {
+			isa = PBXGroup;
+			children = (
+				F3DAA6682307D66C00A9D765 /* Achivements.storyboard */,
+			);
+			path = Achivemetns;
+			sourceTree = "<group>";
+		};
+		F3DAA6622307D52200A9D765 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		F3DAA6632307D52900A9D765 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		F3DAA66A2307D67800A9D765 /* MainTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				F3DAA65F2307D4F400A9D765 /* Activity */,
+				F3DAA6612307D51400A9D765 /* Achivemetns */,
+				F3DAA6602307D50900A9D765 /* AddTransaction */,
+				F3DAA66E2307D6D900A9D765 /* Overview */,
+				F3DAA66B2307D6B200A9D765 /* Settings */,
+			);
+			name = MainTabBar;
+			sourceTree = "<group>";
+		};
+		F3DAA66B2307D6B200A9D765 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F3DAA66C2307D6CE00A9D765 /* Settings.storyboard */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		F3DAA66E2307D6D900A9D765 /* Overview */ = {
+			isa = PBXGroup;
+			children = (
+				F3DAA66F2307D70F00A9D765 /* Overview.storyboard */,
+			);
+			path = Overview;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,9 +324,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3DAA6692307D66C00A9D765 /* Achivements.storyboard in Resources */,
+				F3DAA6702307D70F00A9D765 /* Overview.storyboard in Resources */,
 				1ADD479D2306B3FB00329973 /* LaunchScreen.storyboard in Resources */,
 				1ADD479A2306B3FB00329973 /* Assets.xcassets in Resources */,
+				F3DAA6672307D63900A9D765 /* Activity.storyboard in Resources */,
 				1ADD47952306B3FA00329973 /* Main.storyboard in Resources */,
+				F3DAA6652307D61C00A9D765 /* AddTransaction.storyboard in Resources */,
+				F3DAA66D2307D6CE00A9D765 /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +356,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1ADD47922306B3FA00329973 /* ViewController.swift in Sources */,
 				1ADD47902306B3FA00329973 /* AppDelegate.swift in Sources */,
 				1ADD47982306B3FA00329973 /* SkittleLittle.xcdatamodeld in Sources */,
 			);

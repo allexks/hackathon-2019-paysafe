@@ -14,6 +14,6 @@ struct Transaction {
     var value: Int
     var transactionType: TransactionType
     var recurrence: RecurrenceType
-    var people: [People]
+    var people: [Person]
     var hasPaid: [Bool]
 }

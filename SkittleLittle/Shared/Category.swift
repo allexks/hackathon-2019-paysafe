@@ -12,10 +12,10 @@ import Foundation
 class Category {
     var name: String
     var image: UIImage // Fix later
-    var defaultBudgetType: 
+    var defaultBudgetType: BudgetType
     var transactionType: TransactionType
     
-    init(name: String, image: UIImage, defaultBudgetType: BugetType, transactionType: TransactionType) {
+    init(name: String, image: UIImage, defaultBudgetType: BudgetType, transactionType: TransactionType) {
         self.name = name
         self.image = image
         self.defaultBudgetType = defaultBudgetType

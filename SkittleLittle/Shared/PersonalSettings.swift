@@ -9,8 +9,14 @@
 import Foundation
 
 struct PersonalSettings {
-    var initBalance: Double
-    var currentBalance: Double
-    var currency: String
-//    var period: PeriodType
+    static let shared = PersonalSettings()
+    private init() {}
+
+    var wants: Int = 0
+    var needs: Int = 0
+    var investments: Int = 0
+    var initBalance: Double = 0
+    var currentBalance: Double = 0
+    var currency: String = "BGN"
+    var period: Period = .month
 }

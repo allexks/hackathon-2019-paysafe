@@ -19,13 +19,13 @@ class AchievementTableViewCell: UITableViewCell {
     func lock() {
         nameLabel.textColor = .gray
         levelLabel.isHidden = true
-        // shareImageView.image = {lock}
+        shareImageView.image = UIImage(named: "lock")
     }
     
     func unlock() {
         nameLabel.textColor = .black
         levelLabel.isHidden = false
-        // shareImageView.image = {share}
+        shareImageView.image = UIImage(named: "share")
     }
     
     override func awakeFromNib() {

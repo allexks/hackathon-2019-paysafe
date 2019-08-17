@@ -25,10 +25,6 @@ class ActivityTableViewCell: UITableViewCell {
         
         let imageViewHeight = categoryImageView.bounds.height
         categoryImageView.roundCorners(cornerRadius: imageViewHeight / 2)
-        
-        #warning("To be deleted")
-        categoryImageView.image = UIImage.init(color: .green,
-                                               size: categoryImageView.bounds.size)
     }
     
     override func prepareForReuse() {
@@ -43,11 +39,17 @@ class ActivityTableViewCell: UITableViewCell {
         let priceSign = transaction.transactionType == .outcome ? "-" : ""
         priceLabel.text = "\(priceSign)\(transaction.value) BGN"
         
-        transaction.people.forEach { addPersonToStackView($0) }
+        transaction.people.forEach { addPersonToStackView($0, transaction: transaction) }
     }
     
-    private func addPersonToStackView(_ person: Person) {
-        let personImage = person.pic.rounded()
+    private func addPersonToStackView(_ person: Person, transaction: Transaction) {
+        let personIndex = transaction.people.firstIndex {
+            $0 === person
+        }
+        let hasPaid = transaction.hasPaid[personIndex!]
+        
+        let personImage = hasPaid ? UIImage(named: "tick-green")! : person.pic.rounded()
+        
         let imageView = UIImageView(image: personImage)
         imageView.contentMode = .scaleAspectFit
         imageView.widthAnchor.constraint(equalToConstant: 21).isActive = true

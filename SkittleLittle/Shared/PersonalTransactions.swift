@@ -13,9 +13,9 @@ class PersonalTransactions {
     private init() {}
     
     var transactions: [Transaction] = [MockData.transaction1, MockData.transaction2,
-                                       MockData.transaction3, MockData.transaction1,
-                                       MockData.transaction2, MockData.transaction3,
-                                       MockData.transaction1]
+                                       MockData.transaction3, MockData.transaction4,
+                                       MockData.transaction5, MockData.transaction6,
+                                       MockData.transaction7]
     
     var transactionsGroupedByDate: [Date : [Transaction]] {
         var transactionsByDate = [Date : [Transaction]]()

@@ -49,7 +49,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="buh-qx-cwX">
-                                            <rect key="frame" x="367.5" y="51" width="30" height="30"/>
+                                            <rect key="frame" x="367.5" y="62" width="30" height="30"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="30" id="aKN-w0-YJD"/>
                                                 <constraint firstAttribute="height" constant="30" id="oTo-9l-VsQ"/>
@@ -61,10 +61,10 @@
                                         <constraint firstItem="MdA-JF-fyz" firstAttribute="leading" secondItem="5cT-Wu-d8k" secondAttribute="trailing" constant="10" id="Crg-gw-IDb"/>
                                         <constraint firstAttribute="bottom" secondItem="5cT-Wu-d8k" secondAttribute="bottom" constant="5" id="ILw-x5-Y1o"/>
                                         <constraint firstItem="5cT-Wu-d8k" firstAttribute="leading" secondItem="6MB-iW-sYE" secondAttribute="leading" constant="5" id="LEF-tg-jvt"/>
-                                        <constraint firstItem="buh-qx-cwX" firstAttribute="top" secondItem="YBi-lp-MFQ" secondAttribute="bottom" constant="10" id="Zp9-sW-Wz1"/>
                                         <constraint firstItem="buh-qx-cwX" firstAttribute="centerX" secondItem="YBi-lp-MFQ" secondAttribute="centerX" id="aPG-A6-Fk0"/>
                                         <constraint firstItem="5cT-Wu-d8k" firstAttribute="top" secondItem="6MB-iW-sYE" secondAttribute="top" constant="5" id="ddC-Bg-ucS"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="MdA-JF-fyz" secondAttribute="bottom" constant="10" id="eeS-dr-lk0"/>
+                                        <constraint firstAttribute="bottom" secondItem="buh-qx-cwX" secondAttribute="bottom" constant="10" id="eyy-0k-c6z"/>
                                         <constraint firstItem="vEM-QE-Ob0" firstAttribute="top" secondItem="6MB-iW-sYE" secondAttribute="topMargin" constant="10" id="ir1-Np-wae"/>
                                         <constraint firstItem="vEM-QE-Ob0" firstAttribute="leading" secondItem="5cT-Wu-d8k" secondAttribute="trailing" constant="10" id="rtZ-on-W8T"/>
                                         <constraint firstItem="YBi-lp-MFQ" firstAttribute="top" secondItem="6MB-iW-sYE" secondAttribute="topMargin" constant="10" id="xtT-8P-sdA"/>

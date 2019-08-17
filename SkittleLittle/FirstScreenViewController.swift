@@ -10,21 +10,32 @@ import UIKit
 
 class FirstScreenViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    @IBOutlet weak var needsField: UITextField!
+    @IBOutlet weak var wantsField: UITextField!
+    @IBOutlet weak var investmentsField: UITextField!
+    
+    let personalSettings = PersonalSettings.shared
+    
+    var needs: Int {
+        return Int(needsField.text ?? "") ?? 0
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    var wants: Int {
+        return Int(wantsField.text ?? "") ?? 0
     }
-    */
-
+    
+    var investments: Int {
+        return Int(investmentsField.text ?? "") ?? 0
+    }
+    
+    @IBAction func onTapDoneButton(_ sender: UIButton) {
+        guard needs + wants + investments <= 100 else {
+            print("sum is greater than 100 %") // TODO: use alert extension
+            return
+        }
+        
+        personalSettings.needs = needs
+        personalSettings.wants = wants
+        personalSettings.investments = investments
+    }
 }

@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct PersonalSettings {
+class PersonalSettings {
     static let shared = PersonalSettings()
     private init() {}
 

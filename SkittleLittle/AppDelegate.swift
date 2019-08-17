@@ -17,6 +17,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let firstTimeLaunchKey = "launchedBefore"
+        
+        if !UserDefaults.standard.bool(forKey: firstTimeLaunchKey),
+            let window = window {
+            let firstTimeLaunchStoryboard = UIStoryboard(name: "FirstLaunch", bundle: nil)
+            let windowRootViewController = firstTimeLaunchStoryboard.instantiateViewController(withIdentifier: "FirstLaunchNavigation")
+            window.rootViewController = windowRootViewController
+            
+            UserDefaults.standard.set(true, forKey: firstTimeLaunchKey)
+        }
+        
         return true
     }
 

@@ -20,14 +20,14 @@ enum BudgetType: String {
     case investments = "Investments"
 }
 
-enum RecurrenceType {
-    case never
-    case daily
-    case weekly
-    case biweekly
-    case monthly
-    case yearly
-    case oncePerPeriod
+enum RecurrenceType: String, CaseIterable {
+    case never = "Never"
+    case daily = "Daily"
+    case weekly = "Weekly"
+    case biweekly = "Biweekly"
+    case monthly = "Monthly"
+    case yearly = "Yearly"
+    case oncePerPeriod = "OncePerPeriod"
 }
 
 enum Period: String, CaseIterable {

@@ -9,35 +9,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
-        <scene sceneID="WXV-W6-vsg">
-            <objects>
-                <tableViewController id="O9V-pB-f1h" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="51Q-Ih-9cf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="gyj-Mb-QTa">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gyj-Mb-QTa" id="1r9-lJ-gaK">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="O9V-pB-f1h" id="lNN-Ht-oKX"/>
-                            <outlet property="delegate" destination="O9V-pB-f1h" id="eHo-hZ-dTX"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="j9w-15-HBZ"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JW1-Gq-sDb" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="139" y="103"/>
-        </scene>
         <!--Add-->
         <scene sceneID="j6P-Az-TiA">
             <objects>
@@ -49,12 +20,145 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="O9V-pB-f1h" kind="relationship" relationship="rootViewController" id="isF-Vz-EZc"/>
+                        <segue destination="cqk-sP-Ah6" kind="relationship" relationship="rootViewController" id="nq9-pO-T3n"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iwM-hG-G5Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-780" y="103"/>
+        </scene>
+        <!--Transaction Details Table View Controller-->
+        <scene sceneID="W1Q-iL-TCj">
+            <objects>
+                <tableViewController id="cqk-sP-Ah6" customClass="TransactionDetailsTableViewController" customModule="SkittleLittle" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="iAz-cK-oYs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="lS9-p9-izX">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="382"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IYd-Lz-D07">
+                                    <rect key="frame" x="170" y="16" width="74" height="74"/>
+                                    <color key="backgroundColor" red="0.0" green="0.50196078430000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="74" id="TKW-c0-ae7"/>
+                                        <constraint firstAttribute="width" constant="74" id="eKZ-vv-zLP"/>
+                                    </constraints>
+                                </imageView>
+                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" momentary="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EXs-oX-jx4">
+                                    <rect key="frame" x="120.5" y="106" width="173" height="29"/>
+                                    <segments>
+                                        <segment title="Wants"/>
+                                        <segment title="Needs"/>
+                                        <segment title="Invests"/>
+                                    </segments>
+                                </segmentedControl>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="M1m-lH-RKO">
+                                    <rect key="frame" x="32" y="164" width="366" height="180"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="IDr-Dm-EaK">
+                                            <rect key="frame" x="0.0" y="0.0" width="366" height="44"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z5T-wJ-Njm">
+                                                    <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="44" id="Fjt-v7-PS0"/>
+                                                        <constraint firstAttribute="height" constant="44" id="GUI-Oc-PLm"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter amout in BGN" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aXf-KK-2Vo">
+                                                    <rect key="frame" x="77" y="7" width="289" height="30"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="Bav-OJ-uvg">
+                                            <rect key="frame" x="0.0" y="68" width="366" height="44"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vfl-dx-5ZE">
+                                                    <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="44" id="SX3-4b-0OG"/>
+                                                        <constraint firstAttribute="width" constant="44" id="cTm-jM-LgM"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Transaction Date" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lIH-Hc-8Vq">
+                                                    <rect key="frame" x="77" y="7" width="289" height="30"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="qof-7K-jYF">
+                                            <rect key="frame" x="0.0" y="136" width="366" height="44"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cCS-n0-zJo">
+                                                    <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="44" id="LOM-NN-BQN"/>
+                                                        <constraint firstAttribute="width" constant="44" id="YOf-UJ-zjh"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Set reccurence" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rPm-j9-Hw1">
+                                                    <rect key="frame" x="77" y="7" width="289" height="30"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="EXs-oX-jx4" firstAttribute="centerX" secondItem="IYd-Lz-D07" secondAttribute="centerX" id="DV5-su-lHw"/>
+                                <constraint firstItem="EXs-oX-jx4" firstAttribute="top" secondItem="IYd-Lz-D07" secondAttribute="bottom" constant="16" id="Gon-Op-Imj"/>
+                                <constraint firstItem="IYd-Lz-D07" firstAttribute="top" secondItem="lS9-p9-izX" secondAttribute="top" constant="16" id="K4t-ul-0fe"/>
+                                <constraint firstItem="M1m-lH-RKO" firstAttribute="leading" secondItem="lS9-p9-izX" secondAttribute="leading" constant="32" id="LXv-WI-Udu"/>
+                                <constraint firstAttribute="trailing" secondItem="M1m-lH-RKO" secondAttribute="trailing" constant="16" id="gYf-g7-0hZ"/>
+                                <constraint firstItem="IYd-Lz-D07" firstAttribute="centerX" secondItem="lS9-p9-izX" secondAttribute="centerX" id="mzT-jL-sJ1"/>
+                                <constraint firstItem="M1m-lH-RKO" firstAttribute="top" secondItem="EXs-oX-jx4" secondAttribute="bottom" constant="30" id="nn8-U5-ok0"/>
+                            </constraints>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="74e-aG-K2t">
+                                <rect key="frame" x="0.0" y="410" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="74e-aG-K2t" id="hga-0A-qOc">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="cqk-sP-Ah6" id="24h-cC-FtI"/>
+                            <outlet property="delegate" destination="cqk-sP-Ah6" id="TC3-C9-Dha"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="yT5-3p-wWY"/>
+                    <connections>
+                        <outlet property="amountImageView" destination="Z5T-wJ-Njm" id="jWX-YC-oVI"/>
+                        <outlet property="amountTextField" destination="aXf-KK-2Vo" id="P7Z-mM-CcR"/>
+                        <outlet property="budgetType" destination="EXs-oX-jx4" id="Pac-Gt-AO7"/>
+                        <outlet property="categoryImageView" destination="IYd-Lz-D07" id="p5U-Hy-eQb"/>
+                        <outlet property="dateImageView" destination="Vfl-dx-5ZE" id="Atz-65-gKJ"/>
+                        <outlet property="dateTextField" destination="lIH-Hc-8Vq" id="PT2-ZC-vr1"/>
+                        <outlet property="reccurencyImageView" destination="cCS-n0-zJo" id="wQO-nc-FWb"/>
+                        <outlet property="reccurencyTextField" destination="rPm-j9-Hw1" id="2Dg-6S-XyL"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tE6-ot-awg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="73.913043478260875" y="101.78571428571428"/>
         </scene>
     </scenes>
 </document>

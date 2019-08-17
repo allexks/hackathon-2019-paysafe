@@ -9,9 +9,8 @@
 import Foundation
 
 class PersonalTransactions {
-    var transactions: [Transaction]
+    static let shared = PersonalTransactions()
+    private init() {}
     
-    init(transactions: [Transaction] = []) {
-        self.transactions = transactions
-    }
+    var transactions: [Transaction] = []
 }

@@ -9,7 +9,6 @@
 import UIKit
 import Foundation
 
-
 class ActivityViewController: UIViewController {
     
     private let dataModel = PersonalTransactions.shared
@@ -29,7 +28,7 @@ class ActivityViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "SkittleLittle"
+        navigationItem.title = "SkittleLittle"
         
         tableView.register(cellType: ActivityTableViewCell.self)
         tableView.tableFooterView = UIView()
@@ -54,8 +53,6 @@ class ActivityViewController: UIViewController {
         
         transactionsData = result
     }
-    
-    
 }
 
 

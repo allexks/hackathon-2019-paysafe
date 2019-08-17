@@ -42,6 +42,7 @@
 		F3DCCAE02307F5E7002CE4C4 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DCCADF2307F5E7002CE4C4 /* ActivityViewController.swift */; };
 		F3DCCAE32308022F002CE4C4 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DCCAE22308022F002CE4C4 /* MockData.swift */; };
 		F3DCCAE52308100A002CE4C4 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DCCAE42308100A002CE4C4 /* UIView+.swift */; };
+		F3DCCAE9230835F2002CE4C4 /* TransactionDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DCCAE8230835F2002CE4C4 /* TransactionDetailsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +104,7 @@
 		F3DCCADF2307F5E7002CE4C4 /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		F3DCCAE22308022F002CE4C4 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		F3DCCAE42308100A002CE4C4 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		F3DCCAE8230835F2002CE4C4 /* TransactionDetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				F3DAA6642307D61C00A9D765 /* AddTransaction.storyboard */,
+				F3DCCAE8230835F2002CE4C4 /* TransactionDetailsTableViewController.swift */,
 			);
 			path = AddTransaction;
 			sourceTree = "<group>";
@@ -475,6 +478,7 @@
 				01A580E42307E62A002315F4 /* FirstScreenViewController.swift in Sources */,
 				01A580DC2307DD92002315F4 /* Transaction.swift in Sources */,
 				F3DCCAD82307E9A4002CE4C4 /* UITableView+.swift in Sources */,
+				F3DCCAE9230835F2002CE4C4 /* TransactionDetailsTableViewController.swift in Sources */,
 				1ADD47982306B3FA00329973 /* SkittleLittle.xcdatamodeld in Sources */,
 				F3DCCACD2307E4AD002CE4C4 /* Achivement.swift in Sources */,
 				F3DAA6742307DE1F00A9D765 /* Category.swift in Sources */,

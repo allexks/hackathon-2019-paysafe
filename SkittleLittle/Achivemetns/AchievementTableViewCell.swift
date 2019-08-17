@@ -16,6 +16,18 @@ class AchievementTableViewCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var conditionsLabel: UILabel!
     
+    func lock() {
+        nameLabel.textColor = .gray
+        levelLabel.isHidden = true
+        // shareImageView.image = {lock}
+    }
+    
+    func unlock() {
+        nameLabel.textColor = .black
+        levelLabel.isHidden = false
+        // shareImageView.image = {share}
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -19,6 +19,9 @@ class AchievementsTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+                
+        achievementsList.achivements = [MockData.achievement1, MockData.achievement2, MockData.achievement3, MockData.achievement4, MockData.achievement5]
+        tableView.reloadData()
         
 
         // Uncomment the following line to preserve selection between presentations
@@ -40,15 +43,30 @@ class AchievementsTableViewController: UITableViewController {
         return achievements.count
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier, for: indexPath) as? AchievementTableViewCell else {
+            fatalError("ei nachi edno tableview nimoish izkodish bahti nooba")
+        }
+        
+        let ach = achievements[indexPath.row]
 
-        // Configure the cell...
+        cell.nameLabel.text = ach.name
+        cell.conditionsLabel.text = ach.conditions
+        cell.levelLabel.text = "LVL \(ach.currentLevel)"
+        cell.badgeImageView.image = ach.badge
+        
+        if ach.isLocked {
+            cell.lock()
+        } else {
+            cell.unlock()
+        }
 
         return cell
     }
-    */
+    
+    override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return CGFloat.leastNormalMagnitude
+    }
 
     /*
     // Override to support conditional editing of the table view.

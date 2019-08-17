@@ -6,16 +6,20 @@
 //  Copyright © 2019 ApplePie. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class Achivement {
     var name: String
     var isLocked: Bool
     var currentLevel: Int = 0
+    var conditions: String
+    var badge: UIImage
     
-    init(name: String, isLocked: Bool, currentLevel: Int) {
+    init(name: String, isLocked: Bool, currentLevel: Int, conditions: String, badge: UIImage) {
         self.name = name
         self.isLocked = isLocked
         self.currentLevel = currentLevel
+        self.conditions = conditions
+        self.badge = badge
     }
 }

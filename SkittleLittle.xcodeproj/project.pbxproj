@@ -14,6 +14,9 @@
 		01A580E22307E0EC002315F4 /* FirstLaunch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01A580E12307E0EC002315F4 /* FirstLaunch.storyboard */; };
 		01A580E42307E62A002315F4 /* FirstScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A580E32307E62A002315F4 /* FirstScreenViewController.swift */; };
 		01A580E62307EB21002315F4 /* SecondScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A580E52307EB21002315F4 /* SecondScreenViewController.swift */; };
+		01A580ED23082433002315F4 /* FONT-8-BIT WONDER.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 01A580EC23082433002315F4 /* FONT-8-BIT WONDER.TTF */; };
+		01A580EF23082562002315F4 /* AchievementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A580EE23082562002315F4 /* AchievementTableViewCell.swift */; };
+		01A580F1230827E3002315F4 /* AchievementsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A580F0230827E3002315F4 /* AchievementsTableViewController.swift */; };
 		1ADD47902306B3FA00329973 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADD478F2306B3FA00329973 /* AppDelegate.swift */; };
 		1ADD47952306B3FA00329973 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ADD47932306B3FA00329973 /* Main.storyboard */; };
 		1ADD47982306B3FA00329973 /* SkittleLittle.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1ADD47962306B3FA00329973 /* SkittleLittle.xcdatamodeld */; };
@@ -59,13 +62,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01A580E12307E0EC002315F4 /* FirstLaunch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = FirstLaunch.storyboard; path = SkittleLittle/FirstLaunch.storyboard; sourceTree = SOURCE_ROOT; };
-		01A580E32307E62A002315F4 /* FirstScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FirstScreenViewController.swift; path = SkittleLittle/FirstScreenViewController.swift; sourceTree = SOURCE_ROOT; };
-		01A580E52307EB21002315F4 /* SecondScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SecondScreenViewController.swift; path = SkittleLittle/SecondScreenViewController.swift; sourceTree = SOURCE_ROOT; };
 		01A580D92307DD45002315F4 /* PersonalTransactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PersonalTransactions.swift; path = SkittleLittle/Shared/PersonalTransactions.swift; sourceTree = SOURCE_ROOT; };
 		01A580DB2307DD92002315F4 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Transaction.swift; path = SkittleLittle/Shared/Transaction.swift; sourceTree = SOURCE_ROOT; };
 		01A580DD2307DDBE002315F4 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Enums.swift; path = SkittleLittle/Shared/Enums.swift; sourceTree = SOURCE_ROOT; };
 		01A580DF2307DEC5002315F4 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Person.swift; path = SkittleLittle/Shared/Person.swift; sourceTree = SOURCE_ROOT; };
+		01A580E12307E0EC002315F4 /* FirstLaunch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = FirstLaunch.storyboard; path = SkittleLittle/FirstLaunch.storyboard; sourceTree = SOURCE_ROOT; };
+		01A580E32307E62A002315F4 /* FirstScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FirstScreenViewController.swift; path = SkittleLittle/FirstScreenViewController.swift; sourceTree = SOURCE_ROOT; };
+		01A580E52307EB21002315F4 /* SecondScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SecondScreenViewController.swift; path = SkittleLittle/SecondScreenViewController.swift; sourceTree = SOURCE_ROOT; };
+		01A580EC23082433002315F4 /* FONT-8-BIT WONDER.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FONT-8-BIT WONDER.TTF"; sourceTree = "<group>"; };
+		01A580EE23082562002315F4 /* AchievementTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementTableViewCell.swift; sourceTree = "<group>"; };
+		01A580F0230827E3002315F4 /* AchievementsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsTableViewController.swift; sourceTree = "<group>"; };
 		1ADD478C2306B3FA00329973 /* SkittleLittle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkittleLittle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ADD478F2306B3FA00329973 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1ADD47942306B3FA00329973 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -124,6 +130,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01A580EB2308240E002315F4 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				01A580EC23082433002315F4 /* FONT-8-BIT WONDER.TTF */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		1ADD47832306B3FA00329973 = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +164,7 @@
 			children = (
 				1ADD478F2306B3FA00329973 /* AppDelegate.swift */,
 				F3DCCAE22308022F002CE4C4 /* MockData.swift */,
+				01A580EB2308240E002315F4 /* Fonts */,
 				F3DAA6632307D52900A9D765 /* Utility */,
 				F3DAA6622307D52200A9D765 /* Shared */,
 				F3DAA65E2307D4D700A9D765 /* First Launch  */,
@@ -220,6 +235,8 @@
 			isa = PBXGroup;
 			children = (
 				F3DAA6682307D66C00A9D765 /* Achivements.storyboard */,
+				01A580EE23082562002315F4 /* AchievementTableViewCell.swift */,
+				01A580F0230827E3002315F4 /* AchievementsTableViewController.swift */,
 			);
 			path = Achivemetns;
 			sourceTree = "<group>";
@@ -412,6 +429,7 @@
 				F3DCCAD42307E8CE002CE4C4 /* ActivityTableViewCell.xib in Resources */,
 				F3DAA6702307D70F00A9D765 /* Overview.storyboard in Resources */,
 				1ADD479D2306B3FB00329973 /* LaunchScreen.storyboard in Resources */,
+				01A580ED23082433002315F4 /* FONT-8-BIT WONDER.TTF in Resources */,
 				1ADD479A2306B3FB00329973 /* Assets.xcassets in Resources */,
 				F3DAA6672307D63900A9D765 /* Activity.storyboard in Resources */,
 				1ADD47952306B3FA00329973 /* Main.storyboard in Resources */,
@@ -449,6 +467,8 @@
 				F3DCCAE02307F5E7002CE4C4 /* ActivityViewController.swift in Sources */,
 				F3DAA6722307DD2400A9D765 /* PersonalSettings.swift in Sources */,
 				F3DCCAE52308100A002CE4C4 /* UIView+.swift in Sources */,
+				01A580EF23082562002315F4 /* AchievementTableViewCell.swift in Sources */,
+				01A580F1230827E3002315F4 /* AchievementsTableViewController.swift in Sources */,
 				1ADD47902306B3FA00329973 /* AppDelegate.swift in Sources */,
 				01A580DE2307DDBE002315F4 /* Enums.swift in Sources */,
 				01A580E62307EB21002315F4 /* SecondScreenViewController.swift in Sources */,

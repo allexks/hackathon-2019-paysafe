@@ -56,6 +56,10 @@ class MockData {
                                           recurrence: .monthly,
                                           people: [person1, person2, person3],
                                           hasPaid: [false, false, false])
-
     
+    static var achievement1 = Achivement(name: "Invester", isLocked: false, currentLevel: 1, conditions: "complete at least 30% INVESTMENTS", badge: UIImage(named: "invester")!)
+    static var achievement2 = Achivement(name: "Turbo Invester", isLocked: true, currentLevel: 0, conditions: "complete at least 50% INVESTMENTS", badge: UIImage(named: "turboinvest")!)
+    static var achievement3 = Achivement(name: "Big Spender", isLocked: false, currentLevel: 3, conditions: "complete at least 50% WANTS", badge: UIImage(named: "bigspender")!)
+    static var achievement4 = Achivement(name: "Needy Boii", isLocked: false, currentLevel: 1, conditions: "complete at least 50% NEEDS", badge: UIImage(named: "needs")!)
+    static var achievement5 = Achivement(name: "Perfect Balance", isLocked: true, currentLevel: 0, conditions: "complete at least 30% ALL", badge: UIImage(named: "balance")!)
 }

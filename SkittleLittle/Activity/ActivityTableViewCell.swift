@@ -28,16 +28,8 @@ class ActivityTableViewCell: UITableViewCell {
     }
     
     override func prepareForReuse() {
-        peopleStackView.arrangedSubviews.forEach { $0.removeFromSuperview() } 
-    }
-    
-    private func addPersonToStackView(_ person: Person) {
-        let personImage = person.pic.rounded()
-        let imageView = UIImageView(image: personImage)
-        imageView.contentMode = .scaleAspectFit
-        imageView.widthAnchor.constraint(equalToConstant: 21).isActive = true
-        
-        peopleStackView.addArrangedSubview(imageView)
+        peopleStackView.arrangedSubviews.forEach { $0.removeFromSuperview() }
+        peopleStackView.isHidden = false
     }
 }
 
@@ -64,13 +56,14 @@ extension ActivityTableViewCell {
         let imageView = UIImageView(image: personImage)
         imageView.contentMode = .scaleAspectFit
         imageView.widthAnchor.constraint(equalToConstant: 21).isActive = true
+        
+        peopleStackView.addArrangedSubview(imageView)
     }
         
     func configure(with category: Category) {
         categoryImageView.image = category.image
         categoryTitleLabel.text = category.name
 
-        
         budgetTypeLabel.isHidden = true
         priceLabel.isHidden = true
         peopleStackView.isHidden = true

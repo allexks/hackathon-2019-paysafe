@@ -10,6 +10,7 @@ import Foundation
 
 struct Transaction {
     var datetime: Date
+    var category: Category
     var budgetType: BudgetType
     var value: Int
     var transactionType: TransactionType

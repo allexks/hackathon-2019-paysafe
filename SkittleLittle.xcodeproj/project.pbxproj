@@ -31,6 +31,14 @@
 		F3DCCACB2307E400002CE4C4 /* CategoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DCCACA2307E400002CE4C4 /* CategoryList.swift */; };
 		F3DCCACD2307E4AD002CE4C4 /* Achivement.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DCCACC2307E4AD002CE4C4 /* Achivement.swift */; };
 		F3DCCACF2307E576002CE4C4 /* AchivemetsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DCCACE2307E576002CE4C4 /* AchivemetsList.swift */; };
+		F3DCCAD42307E8CE002CE4C4 /* ActivityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3DCCAD32307E8CE002CE4C4 /* ActivityTableViewCell.xib */; };
+		F3DCCAD62307E912002CE4C4 /* ActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DCCAD52307E912002CE4C4 /* ActivityTableViewCell.swift */; };
+		F3DCCAD82307E9A4002CE4C4 /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DCCAD72307E9A4002CE4C4 /* UITableView+.swift */; };
+		F3DCCADC2307E9FF002CE4C4 /* NSObject+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DCCADB2307E9FF002CE4C4 /* NSObject+.swift */; };
+		F3DCCADE2307EAE1002CE4C4 /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DCCADD2307EAE1002CE4C4 /* UIImage+.swift */; };
+		F3DCCAE02307F5E7002CE4C4 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DCCADF2307F5E7002CE4C4 /* ActivityViewController.swift */; };
+		F3DCCAE32308022F002CE4C4 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DCCAE22308022F002CE4C4 /* MockData.swift */; };
+		F3DCCAE52308100A002CE4C4 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DCCAE42308100A002CE4C4 /* UIView+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,13 +59,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01A580D92307DD45002315F4 /* PersonalTransactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PersonalTransactions.swift; path = SkittleLittle/PersonalTransactions.swift; sourceTree = SOURCE_ROOT; };
-		01A580DB2307DD92002315F4 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Transaction.swift; path = SkittleLittle/Transaction.swift; sourceTree = SOURCE_ROOT; };
-		01A580DD2307DDBE002315F4 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Enums.swift; path = SkittleLittle/Enums.swift; sourceTree = SOURCE_ROOT; };
-		01A580DF2307DEC5002315F4 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Person.swift; path = SkittleLittle/Person.swift; sourceTree = SOURCE_ROOT; };
 		01A580E12307E0EC002315F4 /* FirstLaunch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = FirstLaunch.storyboard; path = SkittleLittle/FirstLaunch.storyboard; sourceTree = SOURCE_ROOT; };
 		01A580E32307E62A002315F4 /* FirstScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FirstScreenViewController.swift; path = SkittleLittle/FirstScreenViewController.swift; sourceTree = SOURCE_ROOT; };
 		01A580E52307EB21002315F4 /* SecondScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SecondScreenViewController.swift; path = SkittleLittle/SecondScreenViewController.swift; sourceTree = SOURCE_ROOT; };
+		01A580D92307DD45002315F4 /* PersonalTransactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PersonalTransactions.swift; path = SkittleLittle/Shared/PersonalTransactions.swift; sourceTree = SOURCE_ROOT; };
+		01A580DB2307DD92002315F4 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Transaction.swift; path = SkittleLittle/Shared/Transaction.swift; sourceTree = SOURCE_ROOT; };
+		01A580DD2307DDBE002315F4 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Enums.swift; path = SkittleLittle/Shared/Enums.swift; sourceTree = SOURCE_ROOT; };
+		01A580DF2307DEC5002315F4 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Person.swift; path = SkittleLittle/Shared/Person.swift; sourceTree = SOURCE_ROOT; };
 		1ADD478C2306B3FA00329973 /* SkittleLittle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkittleLittle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ADD478F2306B3FA00329973 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1ADD47942306B3FA00329973 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -81,6 +89,14 @@
 		F3DCCACA2307E400002CE4C4 /* CategoryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryList.swift; sourceTree = "<group>"; };
 		F3DCCACC2307E4AD002CE4C4 /* Achivement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achivement.swift; sourceTree = "<group>"; };
 		F3DCCACE2307E576002CE4C4 /* AchivemetsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchivemetsList.swift; sourceTree = "<group>"; };
+		F3DCCAD32307E8CE002CE4C4 /* ActivityTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityTableViewCell.xib; sourceTree = "<group>"; };
+		F3DCCAD52307E912002CE4C4 /* ActivityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTableViewCell.swift; sourceTree = "<group>"; };
+		F3DCCAD72307E9A4002CE4C4 /* UITableView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+.swift"; sourceTree = "<group>"; };
+		F3DCCADB2307E9FF002CE4C4 /* NSObject+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+.swift"; sourceTree = "<group>"; };
+		F3DCCADD2307EAE1002CE4C4 /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
+		F3DCCADF2307F5E7002CE4C4 /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		F3DCCAE22308022F002CE4C4 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		F3DCCAE42308100A002CE4C4 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,11 +148,12 @@
 		1ADD478E2306B3FA00329973 /* SkittleLittle */ = {
 			isa = PBXGroup;
 			children = (
+				1ADD478F2306B3FA00329973 /* AppDelegate.swift */,
+				F3DCCAE22308022F002CE4C4 /* MockData.swift */,
 				F3DAA6632307D52900A9D765 /* Utility */,
 				F3DAA6622307D52200A9D765 /* Shared */,
 				F3DAA65E2307D4D700A9D765 /* First Launch  */,
 				F3DAA66A2307D67800A9D765 /* MainTabBar */,
-				1ADD478F2306B3FA00329973 /* AppDelegate.swift */,
 				1ADD47932306B3FA00329973 /* Main.storyboard */,
 				1ADD479E2306B3FB00329973 /* Info.plist */,
 			);
@@ -184,7 +201,9 @@
 		F3DAA65F2307D4F400A9D765 /* Activity */ = {
 			isa = PBXGroup;
 			children = (
+				F3DCCAE12307F602002CE4C4 /* Cells */,
 				F3DAA6662307D63900A9D765 /* Activity.storyboard */,
+				F3DCCADF2307F5E7002CE4C4 /* ActivityViewController.swift */,
 			);
 			path = Activity;
 			sourceTree = "<group>";
@@ -208,15 +227,8 @@
 		F3DAA6622307D52200A9D765 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				01A580DD2307DDBE002315F4 /* Enums.swift */,
-				F3DAA6712307DD2400A9D765 /* PersonalSettings.swift */,
-				01A580D92307DD45002315F4 /* PersonalTransactions.swift */,
-				01A580DB2307DD92002315F4 /* Transaction.swift */,
-				01A580DF2307DEC5002315F4 /* Person.swift */,
-				F3DAA6732307DE1F00A9D765 /* Category.swift */,
-				F3DCCACA2307E400002CE4C4 /* CategoryList.swift */,
-				F3DCCACC2307E4AD002CE4C4 /* Achivement.swift */,
-				F3DCCACE2307E576002CE4C4 /* AchivemetsList.swift */,
+				F3DCCAD22307E89E002CE4C4 /* Extensions */,
+				F3DCCAD02307E868002CE4C4 /* Models */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -254,6 +266,42 @@
 				F3DAA66F2307D70F00A9D765 /* Overview.storyboard */,
 			);
 			path = Overview;
+			sourceTree = "<group>";
+		};
+		F3DCCAD02307E868002CE4C4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				01A580DD2307DDBE002315F4 /* Enums.swift */,
+				F3DAA6712307DD2400A9D765 /* PersonalSettings.swift */,
+				01A580D92307DD45002315F4 /* PersonalTransactions.swift */,
+				01A580DB2307DD92002315F4 /* Transaction.swift */,
+				01A580DF2307DEC5002315F4 /* Person.swift */,
+				F3DAA6732307DE1F00A9D765 /* Category.swift */,
+				F3DCCACA2307E400002CE4C4 /* CategoryList.swift */,
+				F3DCCACC2307E4AD002CE4C4 /* Achivement.swift */,
+				F3DCCACE2307E576002CE4C4 /* AchivemetsList.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		F3DCCAD22307E89E002CE4C4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F3DCCAE42308100A002CE4C4 /* UIView+.swift */,
+				F3DCCADD2307EAE1002CE4C4 /* UIImage+.swift */,
+				F3DCCADB2307E9FF002CE4C4 /* NSObject+.swift */,
+				F3DCCAD72307E9A4002CE4C4 /* UITableView+.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		F3DCCAE12307F602002CE4C4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F3DCCAD32307E8CE002CE4C4 /* ActivityTableViewCell.xib */,
+				F3DCCAD52307E912002CE4C4 /* ActivityTableViewCell.swift */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,6 +409,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3DAA6692307D66C00A9D765 /* Achivements.storyboard in Resources */,
+				F3DCCAD42307E8CE002CE4C4 /* ActivityTableViewCell.xib in Resources */,
 				F3DAA6702307D70F00A9D765 /* Overview.storyboard in Resources */,
 				1ADD479D2306B3FB00329973 /* LaunchScreen.storyboard in Resources */,
 				1ADD479A2306B3FB00329973 /* Assets.xcassets in Resources */,
@@ -395,15 +444,22 @@
 			files = (
 				01A580E02307DEC5002315F4 /* Person.swift in Sources */,
 				01A580DA2307DD45002315F4 /* PersonalTransactions.swift in Sources */,
+				F3DCCAD62307E912002CE4C4 /* ActivityTableViewCell.swift in Sources */,
+				F3DCCAE32308022F002CE4C4 /* MockData.swift in Sources */,
+				F3DCCAE02307F5E7002CE4C4 /* ActivityViewController.swift in Sources */,
 				F3DAA6722307DD2400A9D765 /* PersonalSettings.swift in Sources */,
+				F3DCCAE52308100A002CE4C4 /* UIView+.swift in Sources */,
 				1ADD47902306B3FA00329973 /* AppDelegate.swift in Sources */,
 				01A580DE2307DDBE002315F4 /* Enums.swift in Sources */,
 				01A580E62307EB21002315F4 /* SecondScreenViewController.swift in Sources */,
 				01A580E42307E62A002315F4 /* FirstScreenViewController.swift in Sources */,
 				01A580DC2307DD92002315F4 /* Transaction.swift in Sources */,
+				F3DCCAD82307E9A4002CE4C4 /* UITableView+.swift in Sources */,
 				1ADD47982306B3FA00329973 /* SkittleLittle.xcdatamodeld in Sources */,
 				F3DCCACD2307E4AD002CE4C4 /* Achivement.swift in Sources */,
 				F3DAA6742307DE1F00A9D765 /* Category.swift in Sources */,
+				F3DCCADC2307E9FF002CE4C4 /* NSObject+.swift in Sources */,
+				F3DCCADE2307EAE1002CE4C4 /* UIImage+.swift in Sources */,
 				F3DCCACF2307E576002CE4C4 /* AchivemetsList.swift in Sources */,
 				F3DCCACB2307E400002CE4C4 /* CategoryList.swift in Sources */,
 			);

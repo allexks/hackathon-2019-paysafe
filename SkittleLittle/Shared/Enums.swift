@@ -13,11 +13,11 @@ enum TransactionType {
     case outcome
 }
 
-enum BudgetType {
-    case none
-    case needs
-    case wants
-    case investments
+enum BudgetType: String {
+    case none = ""
+    case needs = "Needs"
+    case wants = "Wants"
+    case investments = "Investments"
 }
 
 enum RecurrenceType {

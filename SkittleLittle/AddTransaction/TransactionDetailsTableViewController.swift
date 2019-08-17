@@ -23,13 +23,47 @@ class TransactionDetailsTableViewController: UITableViewController {
     @IBOutlet weak var reccurencyTextField: UITextField!
     
     private let recurrencyPickerView = UIPickerView()
+    private let datePickerView = UIDatePicker()
     
     let people = [MockData.person1,
                   MockData.person2,
                   MockData.person3]
     
+    var pickerAccessory: UIToolbar!
+    
+    var selectedTextField: UITextField?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        pickerAccessory = UIToolbar()
+        pickerAccessory?.autoresizingMask = .flexibleHeight
+        
+        //this customization is optional
+        pickerAccessory?.barStyle = .default
+        pickerAccessory?.barTintColor = .red
+        pickerAccessory?.backgroundColor = .red
+        
+        var frame = pickerAccessory?.frame
+        frame?.size.height = 44.0
+        pickerAccessory?.frame = frame!
+        
+        let cancelButton = UIBarButtonItem(barButtonSystemItem: .cancel,
+                                           target: self, action: #selector(cancelBtnClicked(_:)))
+        cancelButton.tintColor = .white
+        let flexSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        let doneButton = UIBarButtonItem(barButtonSystemItem: .done,
+                                         target: self, action: #selector(doneBtnClicked(_:)))
+        doneButton.tintColor = .white
+        
+        //Add the items to the toolbar
+        pickerAccessory?.items = [cancelButton, flexSpace, doneButton]
+        
+        dateTextField.inputAccessoryView = pickerAccessory
+        reccurencyTextField.inputAccessoryView = pickerAccessory
+        
+        dateTextField.tag = 0
+        reccurencyTextField.tag = 1
         
         recurrencyPickerView.delegate = self
         recurrencyPickerView.dataSource = self
@@ -39,9 +73,47 @@ class TransactionDetailsTableViewController: UITableViewController {
         reccurencyTextField.delegate = self
         reccurencyTextField.inputView = recurrencyPickerView
         
+        datePickerView.datePickerMode = .date
+        datePickerView.calendar = .current
+        datePickerView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+        datePickerView.backgroundColor = .white
+        datePickerView.addTarget(self, action: #selector(datePickerValueChanged), for: .valueChanged)
+        
+        dateTextField.delegate = self
+        dateTextField.inputView = datePickerView
+        
+        
         tableView.register(cellType: ActivityTableViewCell.self)
     }
+    
+    
+    @objc func cancelBtnClicked(_ button: UIBarButtonItem?) {
+        selectedTextField?.resignFirstResponder()
+    }
+    
+    @objc func doneBtnClicked(_ button: UIBarButtonItem?) {
+        selectedTextField?.resignFirstResponder()
+        dateTextField.resignFirstResponder()
 
+        
+        if selectedTextField?.tag == 0 {
+            let dateFormatterPrint = DateFormatter()
+            dateFormatterPrint.dateFormat = "MMM dd yyyy"
+            
+            dateTextField.text = dateFormatterPrint.string(from: datePickerView.date)
+        } else if selectedTextField?.tag == 1 {
+            let index = recurrencyPickerView.selectedRow(inComponent: 0)
+            reccurencyTextField.text = RecurrenceType.allCases[index].rawValue
+        }
+    }
+    
+    @objc func datePickerValueChanged() {
+        let dateFormatterPrint = DateFormatter()
+        dateFormatterPrint.dateFormat = "MMM dd yyyy"
+        
+        dateTextField.text = dateFormatterPrint.string(from: datePickerView.date)
+    }
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -79,5 +151,7 @@ extension TransactionDetailsTableViewController: UIPickerViewDelegate, UIPickerV
 
 
 extension TransactionDetailsTableViewController: UITextFieldDelegate {
-    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        selectedTextField = textField
+    }
 }

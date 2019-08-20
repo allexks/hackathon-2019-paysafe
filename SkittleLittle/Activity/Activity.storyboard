@@ -14,7 +14,7 @@
         <scene sceneID="dLQ-Pb-D3T">
             <objects>
                 <navigationController id="IqZ-k3-M6e" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Activity" id="YFj-Ry-W9K"/>
+                    <tabBarItem key="tabBarItem" title="Activity" image="glyph-activity" id="YFj-Ry-W9K"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="A9b-21-vFj">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -164,4 +164,7 @@
             <point key="canvasLocation" x="182.60869565217394" y="96.428571428571431"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="glyph-activity" width="30" height="30"/>
+    </resources>
 </document>

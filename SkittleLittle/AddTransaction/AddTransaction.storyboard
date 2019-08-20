@@ -13,7 +13,7 @@
         <scene sceneID="j6P-Az-TiA">
             <objects>
                 <navigationController id="K0k-9n-psM" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Add" id="iDv-e3-0zK"/>
+                    <tabBarItem key="tabBarItem" title="Add" image="glyph-plus" id="iDv-e3-0zK"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qEg-Rd-Aw4">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -39,7 +39,7 @@
                             <rect key="frame" x="0.0" y="0.0" width="414" height="382"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IYd-Lz-D07">
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="k0p0n-category" translatesAutoresizingMaskIntoConstraints="NO" id="IYd-Lz-D07">
                                     <rect key="frame" x="170" y="16" width="74" height="74"/>
                                     <color key="backgroundColor" red="0.0" green="0.50196078430000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
@@ -61,7 +61,7 @@
                                         <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="IDr-Dm-EaK">
                                             <rect key="frame" x="0.0" y="0.0" width="366" height="44"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z5T-wJ-Njm">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moneybag" translatesAutoresizingMaskIntoConstraints="NO" id="Z5T-wJ-Njm">
                                                     <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
                                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
@@ -80,7 +80,7 @@
                                         <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="Bav-OJ-uvg">
                                             <rect key="frame" x="0.0" y="68" width="366" height="44"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vfl-dx-5ZE">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar" translatesAutoresizingMaskIntoConstraints="NO" id="Vfl-dx-5ZE">
                                                     <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
                                                     <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
@@ -99,7 +99,7 @@
                                         <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="qof-7K-jYF">
                                             <rect key="frame" x="0.0" y="136" width="366" height="44"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cCS-n0-zJo">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="repeat" translatesAutoresizingMaskIntoConstraints="NO" id="cCS-n0-zJo">
                                                     <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
                                                     <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
@@ -161,4 +161,11 @@
             <point key="canvasLocation" x="73.913043478260875" y="101.78571428571428"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="calendar" width="50" height="50"/>
+        <image name="glyph-plus" width="30" height="30"/>
+        <image name="k0p0n-category" width="48" height="48"/>
+        <image name="moneybag" width="50" height="50"/>
+        <image name="repeat" width="50" height="50"/>
+    </resources>
 </document>
